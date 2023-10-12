@@ -10,7 +10,7 @@ custom_build(
 
 # Deploy
 k8s_yaml(['k8s/edge-service.yml'])
-k8s_yaml(['k8s/ingress.yml'])
+#k8s_yaml(['k8s/ingress.yml'])
 
 
 # Manage
