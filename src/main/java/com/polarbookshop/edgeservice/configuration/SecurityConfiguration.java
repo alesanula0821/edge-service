@@ -1,3 +1,4 @@
+/*
 package com.polarbookshop.edgeservice.configuration;
 
 import org.springframework.context.annotation.Bean;
@@ -25,6 +26,8 @@ public class SecurityConfiguration {
                             .permitAll()
                         .pathMatchers(HttpMethod.GET, "/books/**")
                             .permitAll()
+                        .pathMatchers(HttpMethod.GET, "/actuator/**")
+                            .permitAll()
                         .anyExchange().authenticated())
                 .oauth2Login(Customizer.withDefaults())
                 .exceptionHandling(exceptionHandlingSpec ->
@@ -47,3 +50,4 @@ public class SecurityConfiguration {
         return oidcLogoutSuccessHandler;
     }
 }
+*/

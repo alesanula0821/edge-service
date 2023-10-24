@@ -1,3 +1,4 @@
+/*
 package com.polarbookshop.edgeservice.user;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -23,7 +24,8 @@ public class UserController {
         );
         return Mono.just(user);
     }
-    /*@GetMapping("user")
+    */
+/*@GetMapping("user")
     public Mono<User> getUser() {
         return ReactiveSecurityContextHolder.getContext()
                 .map(SecurityContext::getAuthentication)
@@ -34,5 +36,6 @@ public class UserController {
                         oidcUser.getFamilyName(),
                         List.of("employee", "customer")
                 ));
-    }*/
-}
+    }*//*
+
+}*/
